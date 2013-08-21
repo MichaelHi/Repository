@@ -1,0 +1,15 @@
+The facebook-like-button-flyout lies behind the "Have-you-seen?"-box, but it is meant to lie in front.
+
+The "Have-you-seen?"-box has the z-index:2.
+For facebook-like-button-flyout I couldn't find an z-index.
+
+I was able to fix the bug, by adding
+
+z-index:3;
+
+to oxid.css, when it comes to .social span. Like this:
+
+.social span {
+    float: left;
+    z-index:3;
+}
